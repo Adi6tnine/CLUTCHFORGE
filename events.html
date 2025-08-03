@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Events & Tournaments - CLUTCHFORGE</title>
+    <meta name="description" content="Join CLUTCHFORGE's exciting gaming tournaments and events. Compete in BGMI, Free Fire, Valorant and more with amazing prizes and rewards.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="CLUTCHFORGE Logo" class="logo-img">
+                <span class="logo-text">CLUTCHFORGE</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Gaming Events & Tournaments</h1>
+            <p class="page-subtitle">Compete, conquer, and claim your victory in India's premier gaming competitions</p>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="game-filter">Filter by Game:</label>
+                    <select id="game-filter" class="filter-select">
+                        <option value="all">All Games</option>
+                        <option value="bgmi">BGMI</option>
+                        <option value="freefire">Free Fire</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="csgo">CS:GO</option>
+                        <option value="codm">Call of Duty Mobile</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="status-filter">Event Status:</label>
+                    <select id="status-filter" class="filter-select">
+                        <option value="all">All Events</option>
+                        <option value="upcoming">Upcoming</option>
+                        <option value="live">Live Now</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="prize-filter">Prize Pool:</label>
+                    <select id="prize-filter" class="filter-select">
+                        <option value="all">All Prizes</option>
+                        <option value="free">Free Entry</option>
+                        <option value="low">Under ₹25K</option>
+                        <option value="medium">₹25K - ₹50K</option>
+                        <option value="high">Above ₹50K</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="upcoming-events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Tournaments</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="events-grid" id="events-grid">
+                <!-- BGMI Championship -->
+                <div class="event-card" data-game="bgmi" data-status="upcoming" data-prize="high">
+                    <div class="event-header">
+                        <div class="event-game-badge bgmi">BGMI</div>
+                        <div class="event-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">CLUTCH Championship 2024</h3>
+                        <p class="event-description">The ultimate BGMI tournament featuring top teams from across India competing for glory and massive prizes.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>December 15-17, 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹75,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>64 Teams Max</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Registration Closes: Dec 10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Entry Fee: ₹500/team</div>
+                        <a href="contact.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Valorant Tournament -->
+                <div class="event-card" data-game="valorant" data-status="upcoming" data-prize="medium">
+                    <div class="event-header">
+                        <div class="event-game-badge valorant">Valorant</div>
+                        <div class="event-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Forge Masters Valorant Cup</h3>
+                        <p class="event-description">Tactical FPS showdown for skilled Valorant teams ready to prove their strategic dominance.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>December 22-24, 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹50,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>32 Teams Max</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Registration Closes: Dec 18</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Entry Fee: ₹300/team</div>
+                        <a href="contact.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Free Fire Tournament -->
+                <div class="event-card" data-game="freefire" data-status="upcoming" data-prize="low">
+                    <div class="event-header">
+                        <div class="event-game-badge freefire">Free Fire</div>
+                        <div class="event-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Campus Clash Free Fire</h3>
+                        <p class="event-description">College students special tournament with exciting prizes and campus bragging rights.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>January 5-6, 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹25,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>48 Teams Max</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Registration Closes: Jan 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Entry Fee: Free for Students</div>
+                        <a href="contact.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- CS:GO Tournament -->
+                <div class="event-card" data-game="csgo" data-status="upcoming" data-prize="medium">
+                    <div class="event-header">
+                        <div class="event-game-badge csgo">CS:GO</div>
+                        <div class="event-status upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Counter Strike Masters</h3>
+                        <p class="event-description">Classic competitive FPS tournament for experienced Counter-Strike teams.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>January 12-14, 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹40,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>24 Teams Max</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Registration Closes: Jan 8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Entry Fee: ₹400/team</div>
+                        <a href="contact.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Call of Duty Mobile -->
+                <div class="event-card" data-game="codm" data-status="live" data-prize="medium">
+                    <div class="event-header">
+                        <div class="event-game-badge codm">COD Mobile</div>
+                        <div class="event-status live">Live Now</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Mobile Warfare Championship</h3>
+                        <p class="event-description">High-intensity Call of Duty Mobile tournament happening right now!</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>December 1-3, 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹35,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>32 Teams Registered</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tv"></i>
+                                <span>Live Streaming Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Registration Closed</div>
+                        <a href="https://discord.gg/clutchforge" class="btn btn-secondary" target="_blank">Watch Live</a>
+                    </div>
+                </div>
+
+                <!-- Past Event Example -->
+                <div class="event-card" data-game="bgmi" data-status="completed" data-prize="high">
+                    <div class="event-header">
+                        <div class="event-game-badge bgmi">BGMI</div>
+                        <div class="event-status completed">Completed</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">CLUTCH Invitational 2024</h3>
+                        <p class="event-description">Our biggest tournament yet with record participation and thrilling matches.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>November 15-17, 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>₹1,00,000 Prize Pool</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>128 Teams Participated</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-crown"></i>
+                                <span>Winner: Team Phoenix</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-fee">Event Completed</div>
+                        <a href="#" class="btn btn-outline">View Results</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="btn btn-outline" id="load-more-btn">Load More Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Information -->
+    <section class="event-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tournament Information</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>How to Register</h3>
+                    <ul>
+                        <li>Create your team with friends</li>
+                        <li>Fill out the registration form</li>
+                        <li>Pay the entry fee (if applicable)</li>
+                        <li>Receive confirmation and tournament details</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-rules"></i>
+                    </div>
+                    <h3>Tournament Rules</h3>
+                    <ul>
+                        <li>Fair play and sportsmanship required</li>
+                        <li>No cheating or exploiting allowed</li>
+                        <li>Teams must have all registered players</li>
+                        <li>Decision of organizers is final</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Prize Distribution</h3>
+                    <ul>
+                        <li>Winners announced immediately after finals</li>
+                        <li>Prizes transferred within 7 business days</li>
+                        <li>Additional rewards for outstanding performance</li>
+                        <li>Certificates for all participants</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support & Contact</h3>
+                    <ul>
+                        <li>24/7 Discord support during events</li>
+                        <li>Technical assistance available</li>
+                        <li>Live streaming with commentary</li>
+                        <li>Post-event feedback and analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Compete?</h2>
+                <p>Join thousands of gamers in our tournaments and prove your skills on the biggest stage.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Register for Tournament</a>
+                    <a href="https://discord.gg/clutchforge" class="btn btn-outline" target="_blank">Join Our Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="CLUTCHFORGE Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CLUTCHFORGE</span>
+                    </div>
+                    <p class="footer-description">Forging India's Gaming Culture through innovation, community, and competitive excellence.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/clutchforge" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://instagram.com/clutchforge" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:hello@clutchforge.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Join as Partner</a></li>
+                        <li><a href="contact.html">Become Member</a></li>
+                        <li><a href="events.html">Tournaments</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CLUTCHFORGE. All rights reserved. Forging the future of gaming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
